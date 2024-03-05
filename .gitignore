@@ -1,5 +1,7 @@
 .idea/
-/0x00-ES6_basic/main/*-main.js
-/0x00-ES6_basic/package.json
-/0x00-ES6_basic/node_modules/
-/0x00-ES6_basic/package-lock.json
+/*/main/
+/*/node_modules/
+/*/*.json
+/*/.eslintrc.js
+/*/babel.config.js
+/*/utils.js
