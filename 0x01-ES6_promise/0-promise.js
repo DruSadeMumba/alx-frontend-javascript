@@ -3,9 +3,9 @@ export default function getResponseFromAPI() {
     let status;
     setTimeout(() => {
       if (status === 200) {
-        resolve('Success')
+        resolve('Success');
       } else {
-        reject(Error(`Failed status: ${status}`))
+        reject(Error(`Failed status: ${status}`));
       }
     }, 2000);
   });
