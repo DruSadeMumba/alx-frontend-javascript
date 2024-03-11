@@ -5,7 +5,7 @@ export default function cleanSet(set, startString) {
       if (startString === '') {
         return;
       }
-      result += elem.substring(startString.length) + '-';
+      result += `${elem.substring(startString.length)}-`;
     }
   });
   return result.slice(0, -1);
