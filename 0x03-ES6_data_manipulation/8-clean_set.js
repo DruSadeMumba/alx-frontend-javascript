@@ -2,8 +2,8 @@ export default function cleanSet(set, startString) {
   let result = '';
   set.forEach((elem) => {
     if (elem.startsWith(startString)) {
-      if (startString === '') {
-        return;
+      if (startString === '' || !startString) {
+        return '';
       }
       result += `${elem.substring(startString.length)}-`;
     }
