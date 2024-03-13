@@ -45,3 +45,15 @@ function createEmployee(salary: number | string) {
         return new Director();
     }
 }
+
+function isDirector(employee: DirectorInterface | TeacherInterface): employee is Director {
+    return (employee as Director).workDirectorTasks !== undefined;
+}
+
+function executeWork(employee: DirectorInterface | TeacherInterface) {
+    if (isDirector(employee)) {
+        console.log(employee.workDirectorTasks());
+    } else {
+        console.log(employee.workTeacherTasks());
+    }
+}
